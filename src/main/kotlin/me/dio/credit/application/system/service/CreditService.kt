@@ -2,9 +2,11 @@ package me.dio.credit.application.system.service
 
 import me.dio.credit.application.system.entity.Credit
 import me.dio.credit.application.system.repository.ICreditRepository
+import org.springframework.stereotype.Service
 import java.lang.RuntimeException
 import java.util.*
 
+@Service
 class CreditService(
     private val creditRepository: ICreditRepository,
     private val customerService: CustomerService
